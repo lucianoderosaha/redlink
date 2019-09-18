@@ -308,6 +308,7 @@ $(document).ready(function() {
 		}else{
 			banco = null;
 			$(".how-select").hide('fast')
+			$("#navigateBtn").hide();
 		}
 		
 
