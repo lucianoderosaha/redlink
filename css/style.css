@@ -1,0 +1,47 @@
+body {
+    background-image: url(../img/bg.png);
+    background-repeat-y: repeat;
+    background-position: center;
+    background-size: contain;
+    }
+
+/* fonts */
+.m300{ font-family: 'Montserrat', sans-serif; font-weight:300  }
+.m400{ font-family: 'Montserrat', sans-serif; font-weight:400  }
+.m500{ font-family: 'Montserrat', sans-serif; font-weight:500  }
+.m600{ font-family: 'Montserrat', sans-serif; font-weight:600  }
+.m700{ font-family: 'Montserrat', sans-serif; font-weight:700  }
+
+/* fonts color */
+.blue{color:#041822;}
+.lightblue{color:#052a39;}
+.white{color: white}
+
+/*links*/
+.white:hover,
+.white:active,
+.white:visited
+{color: white}
+
+
+/*backrounds */
+.b_orange{	background: #ff9900;}
+.b_darkorange{	background: #ff8c00;}
+.b_blue{
+	    background-image: url(../img/bg-area.png);
+    background-repeat-y: repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*layout */
+.iblock{display: inline-block;}
+.block{display: block;}
+
+
+.head{
+	background-image: url(../img/header-bg.png);
+    background-repeat-x: repeat;
+    background-position: center;
+    height: 70px;
+}
