@@ -24,12 +24,13 @@
       <div class="col-lg-12 text-center">
       	<img class="iblock mt-4 d-none d-lg-block"  style="margin: auto" src="img/logo-horizontal.png" alt="1000 premios de 1000 pesos">
       	<img class="iblock mt-4 d-lg-none" style="margin: auto" src="img/logo-vertical.png" alt="1000 premios de 1000 pesos">
-        <h2 class="m700 blue mb-3 mt-4 d-none d-lg-block">Ahora podés ganar $1000.-<br> pagando por Red Link!</h2>
+        <h2 class="m700 blue mt-4 d-none d-lg-block mb-1">Ahora podés ganar $1000.-<br> pagando por Red Link!</h2>
         <div>
-  			<img class="iblock mb-3" src="img/line.png" alt="Línea">
+  			<img class="iblock mb-3 mt-2" src="img/line.png" alt="Línea">
   		</div>
-      	<p class="m600 white mb-3 col-8 iblock d-none d-lg-block">Pagá tus servicios, cargá tu tarjeta de transporte o recargá tu celular desde Home Banking, Mobile Banking o la app de tu banco Link y ganá! </p>
-      	<p class="m500 white mb-3 col-12 iblock">Pagá tus servicios, cargá tu tarjeta de transporte o recargá tu celular desde Home Banking, Mobile Banking o la app de tu banco Link y ganá! </p>
+      	<p class="m600 white mb-3 col-8 iblock d-none d-lg-block m-auto">Pagá tus servicios, cargá tu tarjeta de transporte o recargá tu celular desde Home Banking, Mobile Banking o la app de tu banco Link y ganá! </p>
+      	<p class="m500 white mb-3 col-12 iblock d-lg-none m-auto">Pagá tus servicios, cargá tu tarjeta de transporte o recargá tu celular desde Home Banking, Mobile Banking o la app de tu banco Link y ganá! </p>
+      	<div class="mt-3 mb-3"></div>
 		<div class="m700 d-none d-md-block m-auto col-6 iblock b_orange p-2 pl-3 pr-3 white ">Todos los días, las primeras 10 transacciones ganan. Fácil. Simple. Sin sorteos. <br>No dejes de participar!</div>		
 		<div class="m700  d-md-none m-auto col-10 iblock b_orange p-2 pl-3 pr-3 white ">Todos los días, las primeras 10 transacciones ganan. Fácil. Simple. Sin sorteos. <br>No dejes de participar!</div>		
 		<div class="m400 lightblue mt-3">Entre el 23 de Septiembre y el 23 de diciembre podés ser uno de los ganadores de $1000.- pesos.</div>
@@ -40,14 +41,51 @@
   	<h5 class="white mb-0 m600">No dejes pasar el tiempo.</h5> 
   	<h4  class="white m600">Elegí tu banco y comenzá a participar!</h4>
   	<div class="iblock">
-	  	<select>
-	  		<option>ELEGÍ TU BANCO</option>
-	  	</select>
-	  	<select>
-	  		<option>ELEGÍ CÓMO</option>
-	  	</select>
-	  	<button>INGRESÁ</button>
-  	</div>
+  		<div class="bank-select mb-2" >
+		  	<select id="banco">
+		  		<option value="-1">ELEGÍ TU BANCO</option>
+		  		<option value="0">Banco Provincia</option>
+				<option value="1">Banco Hipotecario</option>
+				<option value="2">Banco Credicoop</option>
+				<option value="3">Banco Bica</option>
+				<option value="4">Banco Coinag</option>
+				<option value="5">Banco Ciudad de Buenos Aires</option>
+				<option value="6">Banco de Comercio</option>
+				<option value="7">Banco de Córdoba</option>
+				<option value="8">Banco de Corrientes</option>
+				<option value="9">Banco de la Nación Argentina</option>
+				<option value="10">Banco de La Pampa</option>
+				<option value="11">Banco Provincia del Neuquen</option>
+				<option value="12">Banco de Tierra del Fuego</option>
+				<option value="13">Banco del Chubut</option>
+				<option value="14">Banco Entre Ríos</option>
+				<option value="15">Banco Formosa</option>
+				<option value="16">Banco Industrial</option>
+				<option value="17">Banco Mariva</option>
+				<option value="18">Banco Masventas</option>
+				<option value="19">Banco Meridian</option>
+				<option value="20">Banco Municipal</option>
+				<option value="21">Banco Piano</option>
+				<option value="22">Banco Rioja</option>
+				<option value="23">Banco Roela</option>
+				<option value="24">Banco Saenz</option>
+				<option value="25">Banco San Juan</option>
+				<option value="26">Banco Santa Cruz</option>
+				<option value="27">Banco Santa Fé</option>
+				<option value="28">Banco Santiago del Estero</option>
+				<option value="29">Caja de Crédito Cuenca</option>
+				<option value="30">Consumax</option>
+				<option value="31">Finandino Cía. Financiera</option>
+				<option value="32">Italcred Cía. Financiera</option>
+				<option value="33">Nuevo Banco del Chaco</option>
+		  	</select>
+		</div>
+		<div class="bank-select mb-2 how-select">
+		  	<select class="como">
+		  		<option>ELEGÍ CÓMO</option>
+		  	</select>
+  		</div>
+	  	<button id="navigateBtn">INGRESÁ</button>
   	<div class="text-center">
   		<small><a class="white m300 sm" href="terminos-y-condiciones.pdf" alt="Descargar términos y condiciones" title="Descargar términos y condiciones">* Términos y Condiciones</a></small>
   	</div>
@@ -55,9 +93,9 @@
   <div class="container">
   	<div class="row">
   		<div class="col-lg-12 text-center">
-  			<h4 class="white m400 mt-4">Todas las semanas publicamos a los ganadores.<br> <span class="d-md-none">Conocelos! ></span> <span class="d-none d-md-block">¡No dejes de consultar si estás entre los afortunados!</span></h4>
-  			<a href="#" class="m500 iblock b_orange white mb-3 p-2">Últimos ganadores</a>
-  			<a href="#" class="m500 iblock b_orange white mb-3 p-2">Todos los ganadores</a>
+  			<h4 class="white m400 mt-4 mb-3">Todas las semanas publicamos a los ganadores.<br> <span class="d-md-none">Conocelos! ></span> <span class="d-none d-md-block">¡No dejes de consultar si estás entre los afortunados!</span></h4>
+  			<a href="#" class=" winner m500 iblock b_orange white mb-3 p-2 shadow">Últimos ganadores</a>
+  			<a href="#" class=" winner m500 iblock b_orange white mb-3 p-2 shadow">Todos los ganadores</a>
   			<div>
   				<img class="iblock mt-3 mb-3" src="img/line.png" alt="Línea">
   			</div>

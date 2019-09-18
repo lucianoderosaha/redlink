@@ -16,6 +16,7 @@ body {
 .blue{color:#041822;}
 .lightblue{color:#052a39;}
 .white{color: white}
+.shadow{text-shadow: 1px 1px #000000;}
 
 /*links*/
 .white:hover,
@@ -45,3 +46,62 @@ body {
     background-position: center;
     height: 70px;
 }
+
+.winner {
+	text-decoration: none!important;
+}
+
+/** SELECTOR */
+
+/* The container must be positioned relative: */
+.bank-select {
+  position: relative;
+  width: 280px;
+  height:40px;
+  background-image: url(../img/select-1.png)!important; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif; font-weight:600
+}
+
+.bank-select select {
+ 	height: 40px;
+    line-height: 40px;
+    width: 280px;
+    padding-left: 40px;
+    border: none;
+    background: transparent;
+    color: white;
+    text-align: center;
+    outline: none;
+     -moz-appearance: window;
+    -webkit-appearance: none;
+    font-family: 'Montserrat', sans-serif; font-weight:600
+}
+
+.bank-select select option {
+  margin: 40px;
+  background: #fca800;
+	color: 	#ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.how-select{
+	 background-image: url(../img/select-2.png)!important; 
+}
+
+.how-select, #navigateBtn{
+	display: none;
+}
+
+#navigateBtn{
+	color: #fca800;
+	background: white;
+	width: 280px;
+	height: 40px;
+	border: none;
+	font-family: 'Montserrat', sans-serif; font-weight:600
+}
+
