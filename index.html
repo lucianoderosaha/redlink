@@ -14,6 +14,49 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Ads: 876997491 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-876997491"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-876997491');
+</script>
+<!-- Event snippet for Promo 1000*1000 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-876997491/pe1qCMfxtqsBEPPWl6ID',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1721943301397726');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1721943301397726&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -85,7 +128,7 @@
 		  		<option>ELEGÍ CÓMO</option>
 		  	</select>
   		</div>
-	  	<button id="navigateBtn">INGRESÁ</button>
+	  	<button id="navigateBtn" onclick="actionMe()">INGRESÁ</button>
   	<div class="text-center mt-2">
   		<small><a class="white m300 sm terminos" href="pdf/terminos_y_condiciones_concurso_campana.pdf" target="_blank" alt="Descargar términos y condiciones" title="Descargar términos y condiciones">* Términos y Condiciones</a></small>
   	</div>
@@ -114,6 +157,14 @@
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+  	
+  	function actionMe(){
+  		  fbq('track', 'Lead');
+  		  gtag_report_conversion();
+  	}
+
+  </script>
 </body>
 
 </html>
