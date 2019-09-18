@@ -49,6 +49,13 @@ body {
 
 .winner {
 	text-decoration: none!important;
+	width: 200px;
+	height: 37px;
+}
+
+a.terminos{
+	text-decoration: underline!important;
+	cursor: pointer;
 }
 
 /** SELECTOR */
